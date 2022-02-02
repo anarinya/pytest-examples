@@ -44,3 +44,15 @@ Instead of passing in named fixtures to tests, it's possible to set *autouse=Tru
 @pytest.fixture(autouse=True, scope="session")
 def fixture_with_session_scope():
 ```
+
+### Command line flag review
+```
+# order of execution:
+pytest --setup-show
+
+# list of available fixtures and their location:
+pytest --fixtures
+
+# allow print statements to be seen in passing tests
+-s and --capture=no
+```
